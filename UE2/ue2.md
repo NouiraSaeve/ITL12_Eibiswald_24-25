@@ -40,5 +40,6 @@ __Code:__
 ![Code in VS Code](imgs_for_md/code_beispielwebsite.png)
 
 __Ausgabe:__
+
 ![Ausgabe](imgs_for_md/ausgabe_beispiele.png)
 
