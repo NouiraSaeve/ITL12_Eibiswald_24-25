@@ -1,12 +1,12 @@
 <html>
  <head>
-  <title>PHP UE2</title>
+  <title>PHP UE2 Zusatz</title>
  </head>
  <body>
  <?php
     // Erstellen der Variablen -> Werte zuteilen
     $liter_1 = 40.5;
-    $liter_2 = 35.7;
+    $liter_2 = 1.7;
 
     // Variable für den Preis pro Liter
     $preis = 1.499;

@@ -43,3 +43,8 @@ __Ausgabe:__
 
 ![Ausgabe](imgs_for_md/ausgabe_beispiele.png)
 
+
+### Lösung des Auftrags
+__Ohne Zusatz:__
+![Website](imgs_for_md/image_of_code_no_extra_work_website.PNG)
+
