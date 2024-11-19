@@ -46,5 +46,13 @@ __Ausgabe:__
 
 ### Lösung des Auftrags
 __Ohne Zusatz:__
+
 ![Website](imgs_for_md/image_of_code_no_extra_work_website.PNG)
+
+
+__Mit Zusatz:__
+
+![Website ohne Input](imgs_for_md/zusatz_ausgabe_ohne_input.PNG)
+
+![Website mit Input](imgs_for_md/zusatz_ausgabe_mit_input.PNG)
 

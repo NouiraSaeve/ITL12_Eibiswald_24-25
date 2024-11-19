@@ -3,20 +3,33 @@
   <title>PHP UE2 Zusatz</title>
  </head>
  <body>
- <?php
-    // Erstellen der Variablen -> Werte zuteilen
-    $liter_1 = 40.5;
-    $liter_2 = 1.7;
+   <!-- Formular wird erstellt -->
+   <form method="POST" action="zusatz.php">
+    <label for="liter_1">Liter 1:</label>
+    <input type="text" id="liter_1" name="liter_1">
+    <br>
+    <label for="liter_2">Liter 2:</label>
+    <input type="text" id="liter_2" name="liter_2">
+    <br>
+    <label for="preis">Preis pro Liter:</label>
+    <input type="text" id="preis" name="preis">
+    <input type="submit" value="Berechnen">
+   </form>
 
-    // Variable für den Preis pro Liter
-    $preis = 1.499;
+   <?php
+      if($_SERVER["REQUEST_METHOD"] == "POST") {
+         // Erstellen der Variablen -> Werte werden eingegeben
+         $liter_1 = $_POST["liter_1"];
+         $liter_2 = $_POST["liter_2"];
+         $preis = $_POST["preis"];
 
-    // Kosten berechnen
-    $kosten = ($liter_1 + $liter_2) * $preis;
+         // Kosten werden berechnet
+         $kosten = ($liter_1 + $liter_2) * $preis;
 
-    // Ausgabe
-    echo("Die Benzinkosten betragen für " . ($liter_1 + $liter_2) . " Liter " . $kosten . "€.");
- ?>
+         // Ausgabe
+         echo("Die Benzinkosten betragen für " . ($liter_1 + $liter_2) . " Liter " . $kosten . "€.");
+      }
+   ?>
  </body>
 </html>
 
