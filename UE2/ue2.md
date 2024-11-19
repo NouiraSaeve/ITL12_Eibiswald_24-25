@@ -35,14 +35,18 @@ Diese Funktion liefert eine Menge an Informationen über die aktuelle __PHP-Konf
 
 - __session.auto_start=off__: Diese Option steuert, ob PHP automatisch eine Session startet, wenn ein Skript ausgeführt wird. 
 
+---
+
 ### Beispiele laut Vorgabe
 __Code:__
+
 ![Code in VS Code](imgs_for_md/code_beispielwebsite.png)
 
 __Ausgabe:__
 
 ![Ausgabe](imgs_for_md/ausgabe_beispiele.png)
 
+---
 
 ### Lösung des Auftrags
 __Ohne Zusatz:__
