@@ -1,12 +1,12 @@
-# Laboratoriumsübung UE (Vorlage)
+# Laboratoriumsübung UE3
 
 ---
 
-__Schuljahr: 20xx/xx__
+__Schuljahr: 2024/25__
 
 __Lehrgang: 2__
 
-__Übungstag: xx.xx.xxx__
+__Übungstag: 21.11.2024__
 
 __Name: Säve Nouira__
 
