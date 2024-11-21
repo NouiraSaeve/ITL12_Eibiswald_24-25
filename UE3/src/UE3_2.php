@@ -22,6 +22,7 @@
 
             // Berechnung des Logarithmus von n
             $logvalue = log($i);
+            echo("logvalue (converted to int): " . (int)$logvalue . " ");
             // Ausgabe der Menge der Sterne je nach dem welches Value $logvalue hat
             for($j = 0; $j < $logvalue; $j++) {
                 echo("*");
@@ -30,9 +31,6 @@
             echo("<br>");
         }
     ?>
-
-    
-
 
     <br>
     <a href="index.php">Aufgabe 1</a>
