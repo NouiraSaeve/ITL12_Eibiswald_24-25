@@ -1,0 +1,25 @@
+# this is just a demo .gitignore file, put all the files and folders you want to be ignored by git inside
+# if you work with NetBeans: ignore NetBeans project files
+/nbproject/private/
+
+
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# Ignore environment variables
+.env
+
+# Ignore XAMPP, IDE, or OS-specific files
+/.idea/
+/.vscode/
+/*.log
+*.bak
+.DS_Store
+Thumbs.db
+
+# Ignore cache and temp files
+/tmp/
+/cache/
+
+
