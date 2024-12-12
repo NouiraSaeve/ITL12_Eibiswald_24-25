@@ -23,7 +23,8 @@ class RegisterController extends Controller
     public function index()
     {
         if (LoginModel::isUserLoggedIn()) {
-            Redirect::home();
+            //Redirect::home();
+            $this->View->render('register/index');
         } else {
             $this->View->render('register/index');
         }
@@ -49,6 +50,7 @@ class RegisterController extends Controller
      * @param int $user_id user's id
      * @param string $user_activation_verification_code user's verification token
      */
+    /*
     public function verify($user_id, $user_activation_verification_code)
     {
         if (isset($user_id) && isset($user_activation_verification_code)) {
@@ -57,7 +59,7 @@ class RegisterController extends Controller
         } else {
             Redirect::to('login/index');
         }
-    }
+    }*/
 
     /**
      * Generate a captcha, write the characters into $_SESSION['captcha'] and returns a real image which will be used
