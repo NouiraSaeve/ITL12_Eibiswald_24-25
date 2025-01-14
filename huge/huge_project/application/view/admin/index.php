@@ -20,8 +20,10 @@
                     <td>Avatar</td>
                     <td>Username</td>
                     <td>User's email</td>
+                    <td>Account-Type</td>
                     <td>Activated ?</td>
                     <td>Link to user's profile</td>
+                    <td>New Role</td>
                     <td>suspension Time in days</td>
                     <td>Soft delete</td>
                     <td>Submit</td>
@@ -37,11 +39,16 @@
                         </td>
                         <td><?= $user->user_name; ?></td>
                         <td><?= $user->user_email; ?></td>
+                        <!-- Function to fetch user account type -->
+                        <td><?= AdminModel::getUserRole($user->user_id)?></td>
                         <td><?= ($user->user_active == 0 ? 'No' : 'Yes'); ?></td>
+                        
                         <td>
                             <a href="<?= Config::get('URL') . 'profile/showProfile/' . $user->user_id; ?>">Profile</a>
                         </td>
                         <form action="<?= config::get("URL"); ?>admin/actionAccountSettings" method="post">
+                            <!-- New Addition to submit value for new role-->
+                            <td><input type="number" name="new_role" /></td>
                             <td><input type="number" name="suspension" /></td>
                             <td><input type="checkbox" name="softDelete" <?php if ($user->user_deleted) { ?> checked <?php } ?> /></td>
                             <td>

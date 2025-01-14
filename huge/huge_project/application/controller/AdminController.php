@@ -24,8 +24,17 @@ class AdminController extends Controller
         );
     }
 
+
+
     public function actionAccountSettings()
     {
+        if(!Request::post('new_role') == null){
+            AdminModel::changeUserRole(
+                Request::post('user_id'), Request::post('new_role')
+            );
+        }
+
+        
         AdminModel::setAccountSuspensionAndDeletionStatus(
             Request::post('suspension'), Request::post('softDelete'), Request::post('user_id')
         );

@@ -340,4 +340,7 @@ class UserModel
         // return one row (we only have one result or nothing)
         return $query->fetch();
     }
+
+    // Self-written function to get Account-Type from Database
+    
 }

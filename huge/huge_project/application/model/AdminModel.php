@@ -92,4 +92,27 @@ class AdminModel
             return true;
         }
     }
+
+    // custom Method to change role of user
+    public static function changeUserRole($userId, $new_role){
+        
+        $database = DatabaseFactory::getFactory()->getConnection();
+
+        $query = $database->prepare("UPDATE users SET user_account_type = :new_role WHERE user_id = :user_id LIMIT 1");
+        $query->execute(array(
+            ':new_role' => $new_role,
+            'user_id' => $userId
+        ));
+    }
+
+    public static function getUserRole($userId) {
+        $database = DatabaseFactory::getFactory()->getConnection();
+
+        $query = $database->prepare("SELECT user_account_type FROM users WHERE user_id = :user_id");
+        $query->execute(array(
+            ':user_id'=>$userId
+        ));
+        $result = $query->fetch()->user_account_type;
+        return $result;
+    }
 }
